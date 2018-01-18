@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+    <link rel="stylesheet" href="./floor/public.css">
+    <link rel="stylesheet" href="./floor/index.css">
+    <link rel="stylesheet" href="./floor/masterslider.main.css">
+    <link rel="stylesheet" href="./floor/ms-skin-sample.css">
+</head>
+
+<body>
+ <div class="idx_bannerbox">
+        <!--<div class="idx_bannermask"></div>-->
+        <div class="master-slider ms-skin-default" id="masterslider">
+            <div class="ms-slide">
+                <img src="floor/bn5.jpg">
+                <img class="ms-layer" data-src="floor/bn51.png" data-effect="top(0)" data-duration="2000" data-delay="1800" data-offset-x="0" data-offset-y="285" data-ease="easeOutQuint" data-origin="tl"
+                    data-position="normal" data-type="image">
+            </div>
+            <div class="ms-slide">
+                <img src="floor/bn6.jpg">
+                <img class="ms-layer" data-src="floor/bn61.png" data-effect="top(0)" data-duration="2000" data-delay="1800" data-offset-x="0" data-offset-y="233" data-ease="easeOutQuint" data-origin="tl"
+                    data-position="normal" data-type="image">
+            </div>
+            <div class="ms-slide">
+                <img src="floor/bn7.jpg">
+                <img class="ms-layer" data-src="floor/bn71.png" data-effect="top(0)" data-duration="2000" data-delay="1800" data-offset-x="0" data-offset-y="277" data-ease="easeOutQuint" data-origin="tl"
+                    data-position="normal" data-type="image">
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+<div style="height: 2000px;width: 100%;"></div>
+
+    
+
+    <script type="text/javascript" src="./floor/jquery-1.11.0.js"></script>
+    <script type="text/javascript" src="./floor/masterslider.min.js"></script><!--轮播-->
+    <script type="text/javascript" src="./floor/smooth.js"></script><!--滚动优化-->
+    <script type="text/javascript">
+        var slider = new MasterSlider();
+        slider.setup('masterslider', {
+            width: 1200, // slider standard width
+            height: 805, // slider standard height
+            space: 0,
+            start: 1,
+            grabCursor: true,
+            swipe: true,
+            mouse: true,
+            keyboard: false,
+            layout: "fullwidth",
+            wheel: false,
+            autoplay: true,
+            instantStartLayers: true,
+            loop: true,
+            shuffle: false,
+            preload: 0,
+            heightLimit: true,
+            autoHeight: false,
+            smoothHeight: true,
+            endPause: false,
+            overPause: true,
+            fillMode: "fill",
+            centerControls: false,
+            startOnAppear: false,
+            layersMode: "center",
+            autofillTarget: "",
+            hideLayers: false,
+            fullscreenMargin: 0,
+            speed: 10,
+            dir: "h",
+            parallaxMode: 'swipe',
+            view: "parallaxMask",
+            // more slider options goes here...
+            // check slider options section in documentation for more options.
+        });
+        // adds Arrows navigation control to the slider.
+        slider.control('arrows');
+        slider.control('timebar', {
+            autohide: false,
+            overVideo: true,
+            align: 'top',
+            color: '#4dc47d',
+            width: 2
+        });
+        slider.control('bullets', {
+            autohide: false,
+            overVideo: true,
+            dir: 'h',
+            align: 'bottom',
+            space: 6,
+            margin: 30
+        });
+    </script>
+
+
+
+</body></html>
